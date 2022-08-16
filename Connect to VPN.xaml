@@ -1,0 +1,112 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Connect_to_VPN" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="934,892" sap2010:WorkflowViewState.IdRef="Connect_to_VPN_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="476,827" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: FortiClient -- Zero Trust Fabric Agent" sap:VirtualizedContainerService.HintSize="434,735" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="b85b76ec-d114-4c8c-8986-334bb7e68713" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,446" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'ZERO TRUST TELEMETRY'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b85b76ec-d114-4c8c-8986-334bb7e68713" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="3, 250, 225, 35" FriendlyName="'REMOTE ACCESS'" FullSelectorArgument="&lt;ctrl name='FortiClient -- Zero Trust Fabric Agent' role='document' /&gt;&lt;ctrl idx='20' role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl name='FortiClient -- Zero Trust Fabric Agent' role='document' /&gt;&lt;ctrl automationid='' role='grouping' check:text='REMOTE ACCESS' /&gt;" Guid="2aad4d75-d323-437e-b1f5-c98c75237914" ImageBase64="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" InformativeScreenshot="6f05d5d7e9d6669cdf9c61cd605d3308.png" ScopeSelectorArgument="&lt;wnd app='forticlient.exe' cls='Chrome_WidgetWin_1' title='FortiClient -- Zero Trust Fabric Agent' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="3, 206, 225, 35" FriendlyName="'ZERO TRUST TELEMETRY'" FullSelectorArgument="&lt;ctrl name='FortiClient -- Zero Trust Fabric Agent' role='document' /&gt;&lt;ctrl idx='19' role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl name='FortiClient -- Zero Trust Fabric Agent' role='document' /&gt;&lt;ctrl automationid='' role='grouping' check:text='ZERO TRUST TELEMETRY' /&gt;" ImageBase64="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" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Connect'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b85b76ec-d114-4c8c-8986-334bb7e68713" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="503, 498, 96, 30" ElementType="Button" FriendlyName="'Connect'" FullSelectorArgument="&lt;ctrl name='FortiClient -- Zero Trust Fabric Agent' role='document' /&gt;&lt;ctrl name='Connect' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='FortiClient -- Zero Trust Fabric Agent' role='document' /&gt;&lt;ctrl name='Connect' role='push button' automationid='' check:fulltext='Connect' /&gt;" Guid="8b81ba56-5be3-472b-9cc7-02009c91e14f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGQAAAAiCAYAAACp43wlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMdSURBVGhD7Zpfa9pgFMb39Xa9fQCv/QC96rWXG8iGV96sXnsjlFEpwnAXtWWEdQRpkCoTs5L0TzSkioNn5yQ5adKmw2JjX8v7wAOac5I3Ob/3XyBvoKWUNBDFpIEopgyQL99tvPt0ircfDO0NmGvNNU8rAcKB958Jxsf8k7ULMNWaa56GkgAJR4aGsXlTzbn2ogRIbrL2xizSQBSxSANRxCINRBGLNBBFLNJAFLFIA1HEokKBlNsOevYCXvAXt/PY/gLD8yvstczcc9T2CK1zH51vebH1LCoIiInKTx8eAfAuPTS/Wijx8cYIe6YPN1igd3j/nC1w24NLz2QZObE1LSoGyGF047fOFXbz4tvqH344yrcMiInmmKenJYxuXvyeG79xMElNazR6hoM/qNTjeAx3eHaBnrNMpj7PuUbtKTl5bc3mME6G0egNTSP7ZArbi+N8jRueogZoTu6Oid3B+O7aa1pUAJAJjBnfsI9Wbjzl+hi9G8r1fRzs9+kYFeRoGhbXmzjY4RwZbQEV73iEMuXsHMXT4fkkus4qOdLWzRTNsK0+qmZAOUuYR9F6tmtE57ijuEPQFNs889Dap98Urw0WIYgtGyEOLC7OCkBKVAB+wOEvK3VcRtgcXS6EFNt2UjlUXO7Fnoca/18hZ+c0CNsyj9ObiTiH4Ce/Z1PsJfGstxTI6iMkekBa4DvZ45X+/O7BnwmIFDPXV9eoSEe6cFNTWNZbCsREy44eNNsbH3rzQP63u3u1QGgq6k7DuZh7XjW9qEq80Q8fepNTVuk4ass2B6mctOP81zdlsU3UqJc/eA+pW6jR1tEOlhiejp62qK8JJPwfthWg04nup7zPu7IFjEcXdd6VzQlABFHWIYZaao1RbUpb61tUEJDI5bYL8zL7pu7NFrAGDqqNOG/Fbe/6QMgP2lrCvaTO0ObOwDkmqvRCa4drYORMnDpQV7bVdK5txTu4Z7CoUCDaq1ukgShikQaiiEUaiCIWaSCKWJQA0d9lvZAf+y5Lf7n4AqZaP/rlIosD4UjJO1n72c21TsNgZYBovbw0EKUE/AMiW56KpNSUaAAAAABJRU5ErkJggg==" InformativeScreenshot="ddd8651be4249c2731e7ff7340252b8b.png" ScopeSelectorArgument="&lt;wnd app='forticlient.exe' cls='Chrome_WidgetWin_1' title='FortiClient -- Zero Trust Fabric Agent' /&gt;" SearchSteps="Selector, FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="521, 503, 60, 20" ElementType="Text" FriendlyName="'Connect'" FullSelectorArgument="&lt;ctrl name='FortiClient -- Zero Trust Fabric Agent' role='document' /&gt;&lt;ctrl name='Connect' role='push button' /&gt;&lt;ctrl name='Connect' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='FortiClient -- Zero Trust Fabric Agent' role='document' /&gt;&lt;ctrl name='Connect' role='push button' /&gt;&lt;ctrl name='Connect' role='text' automationid='' check:text='Connect' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAYAAABKtPtEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ5SURBVFhH7VbPa+JAFN5/b/8Lz/4Bnnr2uAcvnjzpOZeALJUiLF7UsoTtMkhDMLJitiRaR0NqcOHrm5nEJpt0m2IpW5LDB8l7X+bNfPN+5NPnLwbKjEqAPGOZUAmQZywTKgHyjGVCJUCesT5wMXFC8OAPHg4R/BD2fIOuzjL8/x8L6HMfw29Z318CMDR/+OB0YL7m0L6aqAl7b4Eu8+EFISZXSf4HwYDDozOZRtaXFuBKER/cDS6S9o+O777M4hcEYNCWIt2PMEZpUi56v3C5SpQJZYdt/UazE/kjMe3bO0zc46mUuHuP9ms4ebH2BxjXtspOCcrc6x0cHvnFGluR8ha01ZMthmctT2snBFjB2AuCD/1kewadJSZb4vo+LvszstEGxjt5GL5y0RCcOJsC2ux0gTpxGuOovOYrtU4RThxru4MmY83QYgFxjmBj1Y8uDPWNt4gugEpWu+XQ+/RM/rYVyoO/kAEuTLGZAgLUKKBY0P5pJuxxBh0wEoHjwzlugkOHEbfEOdrivQCncRPIWGyabL4Rh8Q+Pe936J78aRQUoHgGqAWpIQ7T9ubs8BTojQSIN5+LzT2a8cXdeYmSSKOgAAy6oxZOq53F+wvwr+nzZgJQao92spaEsq1kE4r9vZkM8p4lUJuqWA6zEpwkIv75JSDA0KZbzPwHdEy0aZQ4wRH2zeJ1TfBMAeS7jBVgOFT7qffF1AhhPNsExdQ40IGVaHEfESLW9CVaWhwrI4BCfeCBrdN/gnwfwrRctHoRr+AYPF8AQibWEd6axB8I8QWHoUU/cI7sYQopP13YKB6z9K1jRhOGkCtAmVAJkGcsEyoB8ozlgYFHJhISHPNQYP4AAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="241, 12, 883, 704" FilePath="C:\Program Files\Fortinet\FortiClient\forticlient.exe" IconBase64="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" InformativeScreenshot="3faa41b9d637079e7564602f394ca8b9.png" Selector="&lt;wnd app='forticlient.exe' cls='Chrome_WidgetWin_1' title='FortiClient -- Zero Trust Fabric Agent'/&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
